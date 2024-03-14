@@ -3,36 +3,36 @@
 #include <iostream>
 using namespace std;
 
-int arr[20];
-int n;
+int arr[20];											// membuat array dengan panjang data 20
+int n;													// membuat variabel inputan n
 
 
-void input()
+void input()											// procedure untuk input 
 {
-	while (true)
+	while (true)										//looping
 	{
-		cout << "masukan jumlah data pada array : ";
-		cin >> n;
+		cout << "masukan jumlah data pada array : ";	// output ke layar
+		cin >> n;										// input dari pengguna 
 
-		if (n <= 20)
+		if (n <= 20)									// membuat kondisi n tidak lebih dari 20
 		{
-			break;
+			break;										// keluar dari loop
 		}
-		else
+		else                                            // jika n lebih dari 20
 		{
-			cout << "\narray yang anda masukan maksimal 20 elemen.\n";
+			cout << "\narray yang anda masukan maksimal 20 elemen.\n";			// menampilkan pesan jika data lebih dari 20
 		}
 	}
-	cout << endl;
-	cout << "====================" << endl;
-	cout << "masukan elemen array" << endl;
+	cout << endl;										// membuat jarak perbaris program
+	cout << "====================" << endl;				// membuat tampilan susunan data elemen array
+	cout << "masukan elemen array" << endl;			
 	cout << "====================" << endl;
 
 
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)							// menggunakan perulangan for untuk menyimpan data pada array
 	{
-		cout << "data ke- " << (i + 1) << ":";
-		cin >> arr[i];
+		cout << "data ke- " << (i + 1) << ":";			// memasukan atau meng inputkan nilai data n
+		cin >> arr[i];									// menyimpan nilai data n kedalam array arr
 	}
 }
 
