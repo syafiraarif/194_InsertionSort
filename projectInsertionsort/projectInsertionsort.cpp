@@ -84,8 +84,8 @@ void display()									// procedure untuk menampilkan hasil
 
 int main()
 {
-	input();
-	insertionsort();
-	display();
+	input();					// memanggil input
+	insertionsort();			// memanggil insertionsort
+	display();					// memanggil display
 }
 
